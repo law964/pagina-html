@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* 
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+ */
+
+ /* importar fonte do google fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ /* importar font do dispositivo */
+ @font-face {
+    font-family: 'android';
+    src: url(../fontes/idroid.otf);
+ }
+
+ /* configurações globais */
+:root {
+    /* variáveis */
+    --cor01: #c5ebd6;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif; 
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-android: 'android', cursive;
+
+}
+/* configurações globais */
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: #c5ebd6;
+    font-family: var(--font-padrao);
+    box-shadow: 1px 1px 10px black;
+    
+}
+
+header{
+    background-color: var(--cor04);
+    color: white;
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor05));
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    
+}
+header > h1 {
+    font-family: var(--font-destaque);
+    font-size: 3em;
+}
+main h1 {
+    font-family: var(--font-android);
+}
+nav {
+    background-color: var(--cor05);
+    
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main a {
+    background-color: #83e1ad;
+    padding: 3px;
+}
+
+main p {
+    padding: 5px;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, #83e1ad, white);
+}
+nav > a:hover {
+    color: white;
+    transform: scale(90%);
+}
+
+
+nav > a {
+    display: inline-block;
+    background-color: none;
+    border: 1px 1px 1px black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 1px;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    color: burlywood;
+    font-size: 1.2em;
+
+}
+
+aside {
+    background-color: #3ddc84;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+aside p {
+    padding: 10px;
+}
+
+aside h3 {
+    text-align: center;
+    background-color: #2fa866;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+footer {
+    text-align: center;
+
+}
+
+footer a {
+    background-color: #3ddc84;
+    padding: 5px;
+}
